@@ -6,7 +6,7 @@ const graphcmsToken = process.env.GRAPHCMS_TOKEN;
 
 
 
-export default async function comments(req, res) { 
+export default async function comments(req: { body: any; }, res: { status: (arg0: number) => { (): any; new(): any; send: { (arg0: unknown): any; new(): any; }; }; }) { 
   console.log(graphcmsToken);
 
 const graphQLClient = new GraphQLClient(graphqlAPI, {
