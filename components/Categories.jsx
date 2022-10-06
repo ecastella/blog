@@ -7,8 +7,9 @@ const Categories = () => {
   const [categories, setCategories] = useState([]);
   
   useEffect(() => {
-    getCategories()
-      .then((newCategories) => setCategories(newCategories))
+    getCategories().then((newCategories) => {
+      setCategories(newCategories)
+    });
   }, []);
   
   return (
@@ -17,7 +18,7 @@ const Categories = () => {
         Categories
       </h3>
     {categories.map((category) => (
-      <Link key={category.slug} href={`/category/$category.slug`}>
+      <Link key={category.slug} href={`/category/${category.slug}`}>
         <span className="cursor-pointer block pb-3 mb-3">
           {category.name}
         </span>
