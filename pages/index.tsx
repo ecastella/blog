@@ -1,4 +1,3 @@
-import { Key } from 'react';
 import { PostCard, Categories, Widget } from '../components';
 import { getPosts } from '../services';
 
