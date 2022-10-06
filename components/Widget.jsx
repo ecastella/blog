@@ -20,7 +20,7 @@ const Widget = ({ categories, slug }) => {
   console.log(relatedPosts)
 
   return (
-    <div className="bg-sky-400 shadow-lg rounded-lg p-8 mb-8">
+    <div className="bg-sky-700 shadow-lg rounded-lg p-8 mb-8">
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">
         {slug ? "Related Posts" : "Recent Posts"}
       </h3>
